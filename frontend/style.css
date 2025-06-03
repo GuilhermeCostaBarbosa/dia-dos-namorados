@@ -1,0 +1,94 @@
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(#ffe6f0, #ffffff);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 2.5em;
+    }
+
+    .letter {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff0f6;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 40px auto;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #ffb6c1;
+    }
+
+    .whatsapp-button {
+      margin: 50px 0;
+    }
+
+    .whatsapp-button a {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: 0.3s;
+    }
+
+    .whatsapp-button a:hover {
+      background-color: #1da851;
+    }
+
+    /* Corações flutuando */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(-45deg);
+      animation: float 10s linear infinite;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: 10px;
+      top: 0;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(-45deg); opacity: 0; }
+    }
