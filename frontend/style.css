@@ -78,3 +78,33 @@ main {
     display: flex;
     margin: 0 auto;
 }
+
+section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#timer-text{
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+#timer p{
+    margin: auto;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(90deg, #f06ab9, #a87ffb); /* rosa claro até roxo claro */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* para navegadores modernos */
+    color: transparent;
+
+}
