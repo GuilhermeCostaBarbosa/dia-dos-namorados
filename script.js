@@ -89,5 +89,5 @@ function createHeart() {
   }, 5000);
 }
 
-setInterval(createHeart, 300);
+setInterval(createHeart, 500);
 
