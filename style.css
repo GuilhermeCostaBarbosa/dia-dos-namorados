@@ -188,3 +188,43 @@ footer button {
 .swiper-pagination{
     display: none;
 }
+
+.heart {
+  position: fixed;
+  color: red;
+  font-size: 24px;
+  top: 0;
+  pointer-events: none;
+}
+
+/* animação para corações da esquerda */
+.heart.left {
+  animation: floatLeft 5s linear forwards;
+}
+
+/* animação para corações da direita */
+.heart.right {
+  animation: floatRight 5s linear forwards;
+}
+
+@keyframes floatLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100vw) translateY(-100vh);
+  }
+}
+
+@keyframes floatRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100vw) translateY(-100vh);
+  }
+}
