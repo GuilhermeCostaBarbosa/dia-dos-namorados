@@ -63,3 +63,31 @@ whatsappBtn.addEventListener('click', () => {
 
 })
 
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.textContent = '❤️';
+
+  const side = Math.random() > 0.5 ? 'left' : 'right';
+  const topPosition = Math.random() * window.innerHeight;
+
+  if (side === 'left') {
+    heart.style.left = '-30px';
+    heart.classList.add('left');
+  } else {
+    heart.style.right = '-30px';
+    heart.classList.add('right');
+  }
+
+  heart.style.top = `${topPosition}px`;
+  heart.style.fontSize = `${Math.random() * 20 + 20}px`;
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+setInterval(createHeart, 300);
+
